@@ -1,0 +1,62 @@
+/* Overall container styling */
+#joke-container {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Funny and playful font */
+  background: linear-gradient(135deg, #ffde59, #ffa07a);
+  color: #1f2937; /* Neutral dark color for text */
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  margin: 0 auto;
+  border: 2px solid #f5a623; /* Bright orange border */
+}
+
+/* Loading text styling */
+.loading-text {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #ff4500; /* Bright orange for fun */
+  animation: bounce 1.5s infinite;
+  text-shadow: 1px 1px 2px rgba(255, 69, 0, 0.5);
+}
+
+/* Joke text styling */
+#joke-text {
+  font-size: 1.3em;
+  color: #1f2937; /* Neutral for readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out;
+  display: none;
+}
+
+/* Animations */
+
+/* Bounce animation for loading text */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Slide-in animation for joke text */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Background styling */
+body {
+  background-color: #f0f8ff;
+  background-image: linear-gradient(180deg, #ffecd2, #fcb69f);
+  font-family: 'Comic Sans MS', cursive;
+}
